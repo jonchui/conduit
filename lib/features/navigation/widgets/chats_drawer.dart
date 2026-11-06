@@ -1829,6 +1829,11 @@ class _ChatsDrawerState extends ConsumerState<ChatsDrawer>
         (activeChatIds) => _conversationIsActive(conversation, activeChatIds),
       ),
     );
+    final bool isAwaitingApproval = ref.watch(
+      pendingApprovalChatIdsProvider.select(
+        (pending) => _conversationIsActive(conversation, pending),
+      ),
+    );
     final bool unread = _conversationUnread(
       conversation,
       selected: isActive,
@@ -1843,6 +1848,7 @@ class _ChatsDrawerState extends ConsumerState<ChatsDrawer>
       unread: unread,
       isLoading: isLoadingSelected,
       isGenerating: isGenerating,
+      isAwaitingApproval: isAwaitingApproval,
       badge: isDirectLocalConversation(conversation)
           ? AppLocalizations.of(context)!.onDevice
           : null,
@@ -2022,6 +2028,8 @@ class _ChatsDrawerState extends ConsumerState<ChatsDrawer>
     return updatedAt.isAfter(lastReadAt);
   }
 
+  /// Whether [conversation] is among [activeChatIds], raw Open WebUI ids as
+  /// the socket and chat list report them.
   bool _conversationIsActive(
     Conversation conversation,
     Set<String> activeChatIds,

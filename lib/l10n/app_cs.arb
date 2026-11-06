@@ -6221,5 +6221,12 @@
   "workspaceKnowledgeMaxFileCount": "Maximální počet souborů",
   "workspaceKnowledgeMaxFileSize": "Maximální velikost souboru (MB)",
   "workspaceKnowledgeLimitDefault": "Limit serveru",
-  "workspaceKnowledgeLimitInvalid": "Zadejte každý limit jako celé číslo větší než nula, nebo jej ponechte prázdný."
+  "workspaceKnowledgeLimitInvalid": "Zadejte každý limit jako celé číslo větší než nula, nebo jej ponechte prázdný.",
+  "mcpAppPreviewDescription": "Interaktivní aplikace ze serveru {serverName}. Otevřete ji a používejte ji zde.",
+  "mcpAppOpen": "Otevřít aplikaci",
+  "mcpAppToolCallTitle": "Povolit toto volání nástroje?",
+  "mcpAppToolCallMessage": "Aplikace chce, aby {serverName} spustil {toolName} s parametry:",
+  "mcpAppToolCallAllow": "Povolit",
+  "mcpAppLoadFailed": "Aplikaci se nepodařilo načíst: {reason}",
+  "mcpAppDidNotStart": "Aplikace se nespustila."
 }

@@ -5915,5 +5915,12 @@
   "workspaceKnowledgeMaxFileCount": "最大ファイル数",
   "workspaceKnowledgeMaxFileSize": "最大ファイルサイズ (MB)",
   "workspaceKnowledgeLimitDefault": "サーバーの上限",
-  "workspaceKnowledgeLimitInvalid": "各上限は 0 より大きい整数で入力するか、空欄にしてください。"
+  "workspaceKnowledgeLimitInvalid": "各上限は 0 より大きい整数で入力するか、空欄にしてください。",
+  "mcpAppPreviewDescription": "{serverName} のインタラクティブなアプリです。開くとここで使えます。",
+  "mcpAppOpen": "アプリを開く",
+  "mcpAppToolCallTitle": "このツール呼び出しを許可しますか？",
+  "mcpAppToolCallMessage": "アプリは {serverName} に次の内容で {toolName} を実行させようとしています:",
+  "mcpAppToolCallAllow": "許可",
+  "mcpAppLoadFailed": "アプリを読み込めませんでした: {reason}",
+  "mcpAppDidNotStart": "アプリが起動しませんでした。"
 }

@@ -4306,5 +4306,12 @@
   "workspaceKnowledgeMaxFileCount": "Maximale Dateianzahl",
   "workspaceKnowledgeMaxFileSize": "Maximale Dateigröße (MB)",
   "workspaceKnowledgeLimitDefault": "Limit des Servers",
-  "workspaceKnowledgeLimitInvalid": "Gib jedes Limit als ganze Zahl über null ein oder lass es leer."
+  "workspaceKnowledgeLimitInvalid": "Gib jedes Limit als ganze Zahl über null ein oder lass es leer.",
+  "mcpAppPreviewDescription": "Eine interaktive App von {serverName}. Öffne sie, um sie hier zu verwenden.",
+  "mcpAppOpen": "App öffnen",
+  "mcpAppToolCallTitle": "Diesen Tool-Aufruf erlauben?",
+  "mcpAppToolCallMessage": "Die App möchte, dass {serverName} {toolName} ausführt mit:",
+  "mcpAppToolCallAllow": "Erlauben",
+  "mcpAppLoadFailed": "Die App konnte nicht geladen werden: {reason}",
+  "mcpAppDidNotStart": "Die App wurde nicht gestartet."
 }

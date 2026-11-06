@@ -136,6 +136,7 @@ Widget sidebarTestBuildHarness({
   Map<String, Future<Conversation>> pendingLoadedConversations = const {},
   bool isAuthenticated = true,
   bool hasApiService = true,
+  ApiService? apiService,
   String? openWebUiServerId,
   bool openWebUiStorageOpen = true,
   Conversation? activeConversation,
@@ -205,7 +206,7 @@ Widget sidebarTestBuildHarness({
       appSettingsProvider.overrideWithValue(settings),
       // ignore: scoped_providers_should_specify_dependencies
       apiServiceProvider.overrideWithValue(
-        hasApiService ? SidebarTestSidebarApiService() : null,
+        hasApiService ? apiService ?? SidebarTestSidebarApiService() : null,
       ),
       // The production auth provider is deliberately incomplete in this
       // narrow harness; keep its account-generation boundary deterministic.
@@ -332,7 +333,7 @@ Widget sidebarTestBuildHarness({
   );
 }
 
-final class SidebarTestSidebarApiService extends Mock implements ApiService {
+class SidebarTestSidebarApiService extends Mock implements ApiService {
   @override
   Future<List<Conversation>> searchConversations(String query) async =>
       const <Conversation>[];

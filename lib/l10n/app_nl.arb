@@ -4298,5 +4298,7 @@
   "chatHandoffStayHere": "Hier blijven",
   "chatWaitingForApproval": "Wacht op goedkeuring",
   "generateTitleNone": "De server heeft geen titel voor deze chat gemaakt. Mogelijk staat het genereren van titels uit.",
-  "generateTitleFailed": "Kan geen titel genereren. Probeer het opnieuw."
+  "generateTitleFailed": "Kan geen titel genereren. Probeer het opnieuw.",
+  "workspaceToolActivate": "Activeren",
+  "workspaceToolDeactivate": "Deactiveren"
 }
